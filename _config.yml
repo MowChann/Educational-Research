@@ -1,0 +1,41 @@
+# Site settings
+title:          教育研究笔记
+description:    "Notes of educational research, a private website"
+baseurl:        ""
+url:            "http://ner.mowchan.me"
+
+# Google Analytics
+# google_analytics: UA—XXXXXXXX-X
+
+# Author
+author:
+  name:         MowChan
+  url:          http://ner.mowchan.me/
+  email:        mowchann@outlook.com
+
+# Build settings
+markdown:       kramdown
+include:
+  - _pages
+
+# Assets
+sass:
+  sass_dir:     _sass
+  style:        compressed
+
+# Gems
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jemoji #Uncomment this to allow emoji in your post
+
+# Permalinks
+permalink:      /:year-:month/:title
+paginate:       5
+
+# Excludes
+exclude: [ Gemfile, Gemfile.lock, tale.gemspec ]
+
+# Disqus (Set to your disqus id)
+# disqus:         jekyll-tale
