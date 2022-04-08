@@ -79,7 +79,19 @@
 
   h2 {
     padding-top: 0.75em;
-    text-aligned: center;
+    text-align: center;
+  }
+
+  table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    th {
+      padding: 0.25em 0.5em;
+    }
+  }
+
+  table, th, td {
+    border: 1px solid $default-shade;
   }
 
   em {
