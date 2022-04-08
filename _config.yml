@@ -23,6 +23,8 @@ include:
 kramdown:
   math_engine: katex
   syntax_highlighter: rouge
+  parse_block_html: true
+  input:       GFM
 
 # Assets
 sass:
@@ -41,7 +43,7 @@ plugins:
 
 titles_from_headings:
   enabled:     true
-  strip_title: false
+  strip_title: true
 
 # Permalinks
 permalink:      /:categories/:slug.html
