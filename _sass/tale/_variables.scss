@@ -13,7 +13,7 @@ $code-color: #bf616a !default;
 // Fonts
 $serif-primary: 'Libre Baskerville', 'Times New Roman', Times, serif !default;
 $serif-secondary: Palatino, 'Palatino LT STD', 'Palatino Linotype', 'Book Antiqua', 'Georgia', serif !default;
-$sans-serif: 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, sans-serif !default;
+$sans-serif: -apple-system,'PingFang SC','Hiragino Sans GB',BlinkMacSystemFont,'Microsoft YaHei','Helvetica Neue',Helvetica,Arial,"Segoe UI Emoji","Segoe UI",Roboto,RobotoNum,Oxygen-Sans,Ubuntu,Cantarell,sans-serif;
 $monospaced: Menlo, Monaco, monospace !default;
 
 @mixin box-sizing($type: border-box) {

@@ -37,6 +37,11 @@ plugins:
   - jemoji #Uncomment this to allow emoji in your post
   - jekyll-archives
   - jekyll-toc
+  - jekyll-titles-from-headings
+
+titles_from_headings:
+  enabled:     true
+  strip_title: false
 
 # Permalinks
 permalink:      /:categories/:slug.html
