@@ -10,13 +10,19 @@ url:            "http://ner.mowchan.me"
 # Author
 author:
   name:         MowChan
-  url:          http://ner.mowchan.me/
+  url:          https://ner.mowchan.me/
   email:        mowchann@outlook.com
 
-# Build settings
+# Build setting
+timezone:       Asia/Shanghai
+highlighter:    rouge
 markdown:       kramdown
 include:
   - _pages
+
+kramdown:
+  math_engine: katex
+  syntax_highlighter: rouge
 
 # Assets
 sass:
@@ -29,10 +35,13 @@ plugins:
   - jekyll-paginate
   - jekyll-seo-tag
   - jemoji #Uncomment this to allow emoji in your post
+  - jekyll-archives
+  - jekyll-toc
 
 # Permalinks
-permalink:      /:year-:month/:title
-paginate:       5
+permalink:      /:categories/:slug.html
+paginate:       10
+paginate_path:  archives/:num"
 
 # Excludes
 exclude: [ Gemfile, Gemfile.lock, tale.gemspec ]
