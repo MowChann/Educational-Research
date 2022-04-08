@@ -36,7 +36,7 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-seo-tag
-  - jemoji #Uncomment this to allow emoji in your post
+  - jemoji
   - jekyll-archives
   - jekyll-toc
   - jekyll-titles-from-headings
@@ -44,6 +44,7 @@ plugins:
 titles_from_headings:
   enabled:     true
   strip_title: true
+  collections: true
 
 # Permalinks
 permalink:      /:categories/:slug.html

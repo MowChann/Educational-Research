@@ -5,6 +5,7 @@ layout: default
     <div class="post{% if page.cssclass %} {{ page.cssclass | join: ' ' }}{% endif %}">
 
       <h1 class="post-title">{{ page.title }}</h1>
+      <div class="post-line"></div>
       <div class="post-info">
         <span>Written by</span>
         {% if page.author %}
@@ -18,8 +19,6 @@ layout: default
           <span>on&nbsp;</span><time datetime="{{ page.date }}">{{ page.date | date: "%B %d, %Y" }}</time>
         {% endif %}
       </div>
-      <div class="post-line"></div>
-
       {{ content }}
     </div>
 
