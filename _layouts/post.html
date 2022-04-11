@@ -39,10 +39,14 @@ layout: default
     <script type="text/javascript">
 $("main .post p").each(function(){
   var str = $(this).html()
-  var regex = /!\[\[([^\|]*)\|([\d\.\%x]*)\s?(\"(.*)\")?\]\]/gm;
-  var subst = `<img src="{% if page.imgurl %}{{ page.imgurl }}{% endif %}$1" width="$2" />`;
-  if ( regex.test(str) ) {
-      $(this).html( str.replace(regex, subst) );
+  var regex1 = /!\[\[([^\|]*)\|([\d\.\%x]*)\s?(\"(.*)\")?\]\]/gm;
+  var subst1 = `<img src="{% if page.imgurl %}{{ page.imgurl }}{% endif %}$1" width="$2" />`;
+  var subst2 = `<img src="{% if page.imgurl %}{{ page.imgurl }}{% endif %}$1" />`;
+  var regex2 = /!\[\[([^\|]*)\]\]/gm;
+  if ( regex1.test(str) ) {
+      $(this).html( str.replace(regex1, subst1) );
+  } else if ( regex2.test(str) ) {
+      $(this).html( str.replace(regex2, subst2) );
   }
 })
     </script>

@@ -49,7 +49,7 @@ titles_from_headings:
 # Permalinks
 permalink:      /:categories/:slug.html
 paginate:       10
-paginate_path:  archives/:num"
+# paginate_path:  archives/:num"
 
 # Excludes
 exclude: [ Gemfile, Gemfile.lock, tale.gemspec ]
