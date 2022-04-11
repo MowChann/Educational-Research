@@ -36,3 +36,13 @@ layout: default
 
       <a href="#" class="top">Top</a>
     </div>
+    <script type="text/javascript">
+$("main .post p").each(function(){
+  var str = $(this).html()
+  var regex = /!\[\[([^\|]*)\|([\d\.\%x]*)\s?(\"(.*)\")?\]\]/gm;
+  var subst = `<img src="{% if page.imgurl %}{{ page.imgurl }}{% endif %}$1" width="$2" />`;
+  if ( regex.test(str) ) {
+      $(this).html( str.replace(regex, subst) );
+  }
+})
+    </script>
